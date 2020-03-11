@@ -1,1 +1,8 @@
-show
+
+<h1> <%= @restaurant.name %></h1>
+
+<p><strong>Category:</strong> <%= @restaurant.category %></p>
+<p><strong>Address:</strong> <%= @restaurant.address %></p>
+<p><strong>Phone Number:</strong> <%= @restaurant.phone_number %></p>
+
+<%= render partial: '/reviews/form', locals: { restaurant: @restaurant, review: @review } %>

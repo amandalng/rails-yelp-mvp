@@ -1,1 +1,8 @@
-index
+<h1>All reviews</h1>
+
+<% @reviews.each do |review| %>
+  <h3><%= review.name %></h3>
+  <p><%= review.category %></p>
+  <p><%= review.address %></p>
+  <p><%= review.phone_number %></p>
+<% end %>
